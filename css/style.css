@@ -545,6 +545,7 @@ main.main{
 .page__touch {}
 .getintouch {
 	padding: 80px 0 135px 0;
+	background-color: #F3F3F3;
 }
 .getintouch__container {}
 .getintouch__header {
@@ -620,6 +621,164 @@ color: #252B42;
 ._active .getintouch__button{
 	border-color: #ffffff;
 }
+/************************************/
+.page__consulting {}
+.consulting {
+	padding: 40px 0;
+}
+.consulting__container {}
+.consulting__body {}
+.consulting__content {
+	padding: 0 0 0 0;
+}
+.consulting__content >*:not(:last-child) {
+	margin: 0 0 10px 0;
+}
+.consulting__title {
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 133%;
+	letter-spacing: 0.1px;
+	color: #252B42;
+}
+.consulting__text {
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 143%;
+	letter-spacing: 0.2px;
+	color: #737373;
+}
+.consulting__button {
+	background: #FF7B47;
+	border-radius: 5px;
+	padding: 15px 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+
+	color: #ffffff;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 200%;
+	text-align: center;
+	letter-spacing: 0.2px;
+	color: #FFFFFF;
+}
+/************************************/
+.footer {}
+.footer__top {
+	background-color: #17213C;
+	padding: 30px 0;
+}
+.footer__container {}
+.footer__row{
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -15px;
+}
+.footer__column {
+	padding: 20px 15px;
+	flex: 0 1 16.667%;
+}
+.footer__column:last-child{
+	flex: 0 1 33.334%;
+}
+.footer__label {
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 150%;
+	letter-spacing: 0.1px;
+	color: #FFFFFF;
+	margin: 0 0 20px 0;
+}
+.footer__menu {}
+
+.menu-footer {}
+.menu-footer__list {}
+.menu-footer__item {}
+.menu-footer__link {
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 171%;
+	letter-spacing: 0.2px;
+	color: #FFFFFF;
+	display: inline-block;
+}
+.menu-footer__link:hover {
+	text-decoration: underline;
+}
+.menu-footer__link:not(:last-child) {
+	margin: 0 0 10px 0;
+}
+.footer__contacts {}
+.contacts-footer {
+	display: flex;
+	flex-direction: column;
+}
+.contacts-footer__item {
+	padding:  0 0 0 34px;
+	display: flex;
+	align-items: center;
+	min-height: 34px;
+
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 171%;
+	letter-spacing: 0.2px;
+	color: #FFFFFF	
+}
+.contacts-footer__item:hover {
+	text-decoration: underline;
+}
+.contacts-footer__item:not(:last-child) {
+	margin: 0 0 10px 0;
+}
+
+.__phone {
+	background: url("../images/footer/bx_bx-phone.svg") left no-repeat;
+}
+.__map {
+	background: url("../images/footer/bx_bx-map.svg") left no-repeat;
+}
+.__email {
+	background: url("../images/footer/carbon_send-alt.svg") left no-repeat;
+}
+
+.footer__bootom {
+	padding: 25px 0;
+}
+.footer__bootom .footer__container{}
+.footer__copy {
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 171%;
+	letter-spacing: 0.2px;
+	color: #737373;
+}
+.footer__social {}
+
+.social {
+	display: flex;
+	align-items: center;	
+}
+.social__item {
+	transition: all 0.5s ease 0s;
+}
+.social__item:not(:last-child) {
+	margin: 0 20px 0 0;
+}
+.social__item:hover{
+	opacity: 0.7;
+}
+.social__item img{
+	max-width: 100%;
+}
+.footer__bootom .footer__container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
 /***************************************/
 @media (max-width: 1087px){
 	.experience__column {
@@ -652,11 +811,20 @@ color: #252B42;
 }
 /*************************************/
 @media (max-width: 991.98px){
+	.footer__column {
+		flex: 0 1 25%;
+	}
+	.footer__column:last-child {
+		flex: 0 1 100%;
+	}
 	.getintouch__header {
 	margin: 0 0 30px 0;
 }
 .getintouch {
     padding: 50px 0;
+}
+._active{
+	padding: 50px 20px;
 }
 	.header__menu {
 		margin: 0 0 0 80px;
@@ -723,13 +891,32 @@ color: #252B42;
 		flex-wrap: wrap;
 		margin: 0 -15px -30px;
 	}
+.consulting__content {
+	padding:0 20px 0 0;
+}	
 	.services__column {
 		padding: 0 15px;
+	}
+	.consulting__body {
+		display: flex;
+	  justify-content: space-between;
+	  align-items: center;
 	}
 }
 /******************************/
 
 @media (max-width:767.98px){
+	.footer__bootom .footer__container{
+		flex-direction: column;
+    text-align: center;
+  }
+	.footer__column {
+		flex: 0 1 50%;
+	}
+	.consulting__content, 
+	.footer__copy{
+		margin: 0 0 20px 0;
+}
 	.block-title__title {
 		font-size: 30px;
 	}
@@ -786,4 +973,3 @@ color: #252B42;
 		margin-right: 10px;
 	}
 }
-
